@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\LOGESHWARAN\AppData\Local\Temp\testng-eclipse-1882546675\testng-customsuite.xml</span>
+                    <span>C:\Users\LOGESHWARAN\AppData\Local\Temp\testng-eclipse-1371920381\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.test.Example" hash-for-method="tc1">tc1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.test.DataProviderExamples" hash-for-method="tc1(happi, 852584100)">tc1(happi, 852584100)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.test.DataProviderExamples" hash-for-method="tc1(logii, 1234500)">tc1(logii, 1234500)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.test.DataProviderExamples" hash-for-method="tc1(mam, ydgbj)">tc1(mam, ydgbj)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +130,31 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.test.Example</span>
+              <span class="class-name">org.test.DataProviderExamples</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc1">
-                  </a> <!-- tc1 -->
+                  <a name="tc1(happi, 852584100)">
+                  </a> <!-- tc1(happi, 852584100) -->
                   <span class="method-name">tc1</span>
+                  <span class="parameters">(happi, 852584100)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc1(logii, 1234500)">
+                  </a> <!-- tc1(logii, 1234500) -->
+                  <span class="method-name">tc1</span>
+                  <span class="parameters">(logii, 1234500)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc1(mam, ydgbj)">
+                  </a> <!-- tc1(mam, ydgbj) -->
+                  <span class="method-name">tc1</span>
+                  <span class="parameters">(mam, ydgbj)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +162,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\LOGESHWARAN\AppData\Local\Temp\testng-eclipse-1882546675\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\LOGESHWARAN\AppData\Local\Temp\testng-eclipse-1371920381\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +171,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.test.Example&quot;/&gt;
+      &lt;class name=&quot;org.test.DataProviderExamples&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,16 +211,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'tc1')
-data.setCell(0, 2, 'org.test.Example')
-data.setCell(0, 3, 10);
+data.setCell(0, 2, 'org.test.DataProviderExamples')
+data.setCell(0, 3, 3040);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'tc1')
+data.setCell(1, 2, 'org.test.DataProviderExamples')
+data.setCell(1, 3, 1208);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'tc1')
+data.setCell(2, 2, 'org.test.DataProviderExamples')
+data.setCell(2, 3, 1175);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 ms</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -219,10 +254,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.test.Example</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">tc1</span>
+              <div class="chronological-class-name">org.test.DataProviderExamples</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Start</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">tc1(logii, 1234500)</span>
+                <span class="method-start">2508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc1(happi, 852584100)</span>
+                <span class="method-start">5551 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc1(mam, ydgbj)</span>
+                <span class="method-start">6762 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
