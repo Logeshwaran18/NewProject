@@ -1,5 +1,6 @@
 package org.test;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Example {
@@ -14,5 +15,6 @@ public class Example {
 			rev = rev+sp[i]+" ";
 		}
 		System.out.println(rev);
+		Assert.assertTrue(false);
 	}
 }
