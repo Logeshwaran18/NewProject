@@ -2,18 +2,17 @@ package org.test;
 
 import org.testng.annotations.Test;
 
-public class First {
+public class Example {
+
 	@Test
 	private void tc1() {
-		System.out.println("jjjjjjjjjjj");
-		String a="Welcome to java";
+		String a ="welcome to java class";
 		String[] sp = a.split(" ");
+
 		String rev="";
-		for (int i = sp.length; i >=0; i--) {
-			rev=rev+sp[i]+" ";
+		for (int i = sp.length-1; i>=0; i--) {
+			rev = rev+sp[i]+" ";
 		}
 		System.out.println(rev);
-
 	}
-
 }
