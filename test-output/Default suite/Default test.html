@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 21 18:52:49 IST 2021</td>
+<td>Started on:</td><td>Sat May 22 16:58:56 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (39 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (40 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.test.Example.tc1()'><b>tc1</b><br>Test class: org.test.Example</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at org.test.Example.tc1(Example.java:18)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+<td title='org.test.IgnoreAndInvocationCount.tc4()'><b>tc4</b><br>Test class: org.test.IgnoreAndInvocationCount</td>
+<td><div><pre>org.testng.TestException: 
+The exception was thrown with the wrong message: expected &quot;Dont do&quot; but got &quot;/ by zero&quot;
+	at org.testng.internal.ExpectedExceptionsHolder.wrongException(ExpectedExceptionsHolder.java:71)
+	at org.testng.internal.Invoker.considerExceptions(Invoker.java:1130)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:615)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -107,19 +100,21 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1846412426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1846412426'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at org.test.Example.tc1(Example.java:18)
+Caused by: java.lang.ArithmeticException: / by zero
+	at org.test.IgnoreAndInvocationCount.tc4(IgnoreAndInvocationCount.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	... 19 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1037324811", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1037324811'><pre>org.testng.TestException: 
+The exception was thrown with the wrong message: expected &quot;Dont do&quot; but got &quot;/ by zero&quot;
+	at org.testng.internal.ExpectedExceptionsHolder.wrongException(ExpectedExceptionsHolder.java:71)
+	at org.testng.internal.Invoker.considerExceptions(Invoker.java:1130)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:615)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -139,9 +134,56 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.ArithmeticException: / by zero
+	at org.test.IgnoreAndInvocationCount.tc4(IgnoreAndInvocationCount.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	... 19 more
 </pre></div></td>
 <td>0</td>
-<td>org.test.Example@475530b9</td></tr>
+<td>org.test.IgnoreAndInvocationCount@1d057a39</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.test.IgnoreAndInvocationCount.tc1()'><b>tc1</b><br>Test class: org.test.IgnoreAndInvocationCount</td>
+<td></td>
+<td>0</td>
+<td>org.test.IgnoreAndInvocationCount@1d057a39</td></tr>
+<tr>
+<td title='org.test.IgnoreAndInvocationCount.tc3()'><b>tc3</b><br>Test class: org.test.IgnoreAndInvocationCount</td>
+<td></td>
+<td>0</td>
+<td>org.test.IgnoreAndInvocationCount@1d057a39</td></tr>
+<tr>
+<td title='org.test.IgnoreAndInvocationCount.tc3()'><b>tc3</b><br>Test class: org.test.IgnoreAndInvocationCount</td>
+<td></td>
+<td>0</td>
+<td>org.test.IgnoreAndInvocationCount@1d057a39</td></tr>
+<tr>
+<td title='org.test.IgnoreAndInvocationCount.tc3()'><b>tc3</b><br>Test class: org.test.IgnoreAndInvocationCount</td>
+<td></td>
+<td>0</td>
+<td>org.test.IgnoreAndInvocationCount@1d057a39</td></tr>
+<tr>
+<td title='org.test.IgnoreAndInvocationCount.tc3()'><b>tc3</b><br>Test class: org.test.IgnoreAndInvocationCount</td>
+<td></td>
+<td>0</td>
+<td>org.test.IgnoreAndInvocationCount@1d057a39</td></tr>
+<tr>
+<td title='org.test.IgnoreAndInvocationCount.tc3()'><b>tc3</b><br>Test class: org.test.IgnoreAndInvocationCount</td>
+<td></td>
+<td>0</td>
+<td>org.test.IgnoreAndInvocationCount@1d057a39</td></tr>
 </table><p>
 </body>
 </html>

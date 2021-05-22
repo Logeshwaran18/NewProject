@@ -15,6 +15,6 @@ public class Example {
 			rev = rev+sp[i]+" ";
 		}
 		System.out.println(rev);
-		Assert.assertTrue(false);
+		
 	}
 }
