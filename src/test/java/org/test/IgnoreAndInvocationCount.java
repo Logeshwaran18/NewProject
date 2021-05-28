@@ -19,7 +19,8 @@ public class IgnoreAndInvocationCount {
 		System.out.println("Hello");
 		
 	}
-	@Test(expectedExceptions=ArithmeticException.class,expectedExceptionsMessageRegExp="Dont do")
+//	@Test(expectedExceptions=ArithmeticException.class,expectedExceptionsMessageRegExp="Dont do")
+	@Test(expectedExceptions=ArithmeticException.class)
 	private void tc4() {
 		
 		int a=5;
