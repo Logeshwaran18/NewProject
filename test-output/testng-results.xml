@@ -1,96 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="879" started-at="2021-06-04T03:55:24Z" finished-at="2021-06-04T03:55:25Z">
+  <suite name="Default suite" duration-ms="26741" started-at="2021-06-04T04:49:20Z" finished-at="2021-06-04T04:49:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="879" started-at="2021-06-04T03:55:24Z" finished-at="2021-06-04T03:55:25Z">
-      <class name="org.test.RedBus">
-        <test-method status="FAIL" signature="tc1()[pri:0, instance:org.test.RedBus@6f7fd0e6]" name="tc1" duration-ms="856" started-at="2021-06-04T03:55:24Z" finished-at="2021-06-04T03:55:25Z">
-          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
-            <message>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:573)
-at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:792)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:573)
-at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:573)
-at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
-at org.test.RedBus.tc1(RedBus.java:18)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:915)
-at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:101)
-at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:797)
-at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:649)
-at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:567)
-... 32 more
-Caused by: java.net.UnknownHostException: chromedriver.storage.googleapis.com
-at java.net.InetAddress.getAllByName0(Unknown Source)
-at java.net.InetAddress.getAllByName(Unknown Source)
-at java.net.InetAddress.getAllByName(Unknown Source)
-at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:413)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
-at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
-at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:135)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:169)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:93)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:128)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:116)
-at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:178)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:89)
-at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:139)
-at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:900)
-... 36 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+    <test name="Default test" duration-ms="26741" started-at="2021-06-04T04:49:20Z" finished-at="2021-06-04T04:49:47Z">
+      <class name="org.test.TestCaseOne">
+        <test-method status="PASS" signature="getBaseUrl()[pri:0, instance:org.test.TestCaseOne@27efef64]" name="getBaseUrl" is-config="true" duration-ms="2449" started-at="2021-06-04T04:49:20Z" finished-at="2021-06-04T04:49:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc1 -->
-      </class> <!-- org.test.RedBus -->
+        </test-method> <!-- getBaseUrl -->
+        <test-method status="PASS" signature="sigin()[pri:0, instance:org.test.TestCaseOne@27efef64]" name="sigin" duration-ms="23448" started-at="2021-06-04T04:49:23Z" finished-at="2021-06-04T04:49:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sigin -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:org.test.TestCaseOne@27efef64]" name="TearDown" is-config="true" duration-ms="823" started-at="2021-06-04T04:49:46Z" finished-at="2021-06-04T04:49:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- org.test.TestCaseOne -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

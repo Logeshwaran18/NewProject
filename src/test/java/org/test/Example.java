@@ -1,20 +1,30 @@
 package org.test;
 
+import java.awt.PopupMenu;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Date;
+
+import org.baseclass.Base;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Example {
+import io.github.bonigarcia.wdm.WebDriverManager;
+import javafx.stage.Popup;
 
-	@Test
-	private void tc1() {
-		String a = "welcome to java class";
-		String[] sp = a.split(" ");
+public class Example extends Base {
 
-		String rev = "";
-		for (int i = sp.length - 1; i >= 0; i--) {
-			rev = rev + sp[i] + " ";
-		}
-		System.out.println(rev);
+	public static void main(String[] args) {
+		
+		WebDriverManager.iedriver().setup();
+		driver = new InternetExplorerDriver();
+		maximizeWindow();
+		implicitWait(10);
+		launchUrl("https://www.facebook.com");
+			
 
 	}
+
 }
